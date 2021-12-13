@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  /* margin-left:0.5rem;
+    margin-right: 0.5rem; */
+}
+
+.navbar-ul {
+  list-style: none;
+  z-index: 100;
+  padding: 20px;
+  background-color: orangered;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+}
+.nav-mob-ul {
+    display:none;
+  list-style: none;
+  z-index: 100;
+  padding: 20px;
+  background-color: orangered;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
+.nav-mob-ul li {
+    font-size: 25px;
+    color:white;
+    display: list-item;
+}
+.navbar-a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navbar-a:hover {
+  color: rgb(0, 0, 0);
+}
+.navbar-li {
+  float: right;
+  display: inline;
+}
+.outer-div {
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+.inner-div img {
+  width: 470px;
+  height: 360px;
+  margin: 4px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.inner-div img:hover {
+  opacity: 1;
+}
+.showcase {
+  line-height: 10px;
+  margin-left: 2rem;
+  margin-top: 8rem;
+}
+.main-heading {
+  font-size: 5rem;
+}
+.secondary-heading {
+  font-size: 4rem;
+  color: orangered;
+}
+hr {
+  width: 50px;
+  border: 5px solid orangered;
+  border-radius: 6px;
+}
+.section {
+  margin-top: 5rem;
+  line-height: 23px;
+  width: 95%;
+  margin-left: 2rem;
+  text-align: justify;
+}
+
+.card {
+  width: 30%;
+  margin: 10px;
+  border-radius: 20px !important;
+  border: none !important;
+  background-color: rgb(238, 238, 238) !important;
+}
+.card img {
+  border-radius: 20px 20px 0px 0px !important;
+  filter: grayscale(70%);
+}
+.card img:hover {
+  filter: grayscale(10%);
+}
+.outer-div-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.rates {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+.basic {
+  width: 47.5%;
+}
+.pro {
+  width: 47.5%;
+}
+.package-ul {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  font-size: 25px;
+}
+.package-head {
+  padding: 32px;
+  font-size: 50px;
+  color: white;
+}
+.basic-li {
+  background-color: grey;
+}
+.pro-li {
+  background-color: orangered;
+}
+.package-content {
+  padding: 16px;
+  border-bottom: 1px solid rgb(184, 184, 184);
+  background-color: rgb(243, 243, 243);
+}
+.outer-form {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.forms {
+  width: 95%;
+  padding: 10px;
+}
+.forms label {
+  margin-top: 10px;
+}
+.submit-button {
+  margin-top: 20px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+  width: 5%;
+}
+
+@media (max-width: 480px) {
+  .navbar-ul {
+    display: none;
+  }
+  .nav-mob-ul{
+      display: flex;
+  }
+  .showcase {
+    margin-left: 0.5rem;
+  }
+  .section {
+    margin-left: 0.5rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .basic {
+    width: 100%;
+  }
+  .pro {
+    width: 100%;
+  }
+  .submit-button {
+    width: 20%;
+  }
+  .inner-div img {
+    width: 97%;
+  }
+}
